@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./fondo.jpg");
+}
+
+header{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+h1{
+    color: darkblue;
+    font-family:cursive;
+    text-align: center;
+    margin: 0;
+}
+
+.subtitle{
+    color: rgb(218, 65, 49);
+    font-family: cursive;
+    margin: 0;
+    text-align: center;
+}
+
+.figure-container {
+    display: flex;
+}
+
+.cuadrado-container,
+.triangulo-container,
+.circulo-container{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border: 4px solid rgba(233, 233, 233, 0.979);
+    border-style:ridge;
+    border-radius: 18px;
+    margin: 20px;
+    padding: 0 12px;
+}
+
+.cuadrado-header,
+.triangulo-header,
+.circulo-header{
+    display: grid;
+    justify-content: center;
+}
+
+
+.cuadrado-header img,
+.triangulo-header img,
+.circulo-header img{
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
+.title-header-p{
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+    font-size: large;
+}
+
+.form-cuadrado,
+.form-triangulo,
+.form-circulo{
+    display: grid;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.label-cuadrado,
+.label-triangulo,
+.label-circulo{
+    font-family: cursive;
+    text-align: center;
+    font-size: small;
+    color: darkblue;
+}
+
+
+.valor-lado-input{
+    width: 80%;
+    position: relative;
+    justify-self: center;
+    border-radius: 6px;
+    border-color: rgb(219, 217, 217);
+    text-align: center;
+}
+
+.butons-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.calcular-perimetro-button{
+    background-color: rgb(30, 30, 136);
+    color: white;
+    border-radius: 10px;
+    border-color: rgb(30, 30, 136);
+    padding: 4px 12px;
+}
+
+.calcular-area-button{
+    width: auto;
+    background-color:lightseagreen;
+    color: white;
+    border-radius: 10px;
+    border-color: lightseagreen;
+}
+
+.calcular-perimetro-button:hover,
+.calcular-area-button:hover{
+    cursor: pointer;
+}
+
+.resultado-p{
+    text-align: center;
+    font-family: cursive;
+}
+
+@media (max-width: 640px){
+    .figure-container {
+        flex-direction: column;
+    }
+}
+
+

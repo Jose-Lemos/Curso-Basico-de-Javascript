@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="./figuras_geometricas.css">
+</head>
+<body>
+    <header>
+        <h1>Figuras Geométricas</h1>
+        <p class="subtitle">Este es el primer taller practico de javaScript</p>
+    </header>
+    
+    <div class="figure-container">
+        <section class="cuadrado-container">
+            <div class="cuadrado-header">
+                <p class="title-header-p">Calcula el área y el perímetro de un cuadrado</p>
+                <img src="./cuadrado.png" alt="cuadrado">
+            </div>
+
+
+            <form action="" class="form-cuadrado">
+                <label for="InputCuadrado" class="label-cuadrado">Escribe cuánto mide cada lado de tu cuadrado:</label>
+                <input type="number" class="valor-lado-input" id="InputCuadrado" placeholder="lados en cm">
+
+                <div class="butons-input">
+                    <button type="button" class="calcular-perimetro-button" onclick="calcularPerimetroCuadrado()">
+                        Calcular el perímetro
+                    </button> 
+                        
+                    <button type="button"  class="calcular-area-button" onclick="calcularAreaCuadrado()">
+                        Calcular el área
+                    </button>
+                </div>
+
+                <p id="resultado-cuadrado-p" class="resultado-p"></p>
+                    
+            </form>
+
+           
+            
+        </section>
+
+        <section class="triangulo-container">
+                <div class="triangulo-header">
+                    <p class="title-header-p">Calcula el área y el perímetro de un triángulo</p>
+                    <img src="./triangulo.png" alt="triangulo">
+                </div>
+
+            
+                <form action="" class="form-triangulo">
+                    <label for="triangulo" class="label-triangulo">Escribe cuánto mide los lados de tu triangulo: (cm)</label>
+                    <input type="number" class="valor-lado-input" id="InputTriangulo1" placeholder="lado 1">
+                    <input type="number" class="valor-lado-input" id="InputTriangulo2" placeholder="lado 2">
+                    <input type="number" class="valor-lado-input" id="InputBaseTriangulo" placeholder="base">
+                    
+                    
+                    <div class="butons-input">
+                        <button type="button" class="calcular-perimetro-button" onclick="calcularPerimetroTriangulo()">
+                            Calcular el perímetro
+                        </button> 
+                        
+                        <button type="button"  class="calcular-area-button" onclick="calcularAreaTriangulo()">
+                            Calcular el área
+                        </button>
+                    </div>
+
+                    <p id="resultado-triangulo-p" class="resultado-p"></p>
+                </form>
+
+           
+        </section>
+
+        <section class="circulo-container">
+                <div class="circulo-header">
+                    <p class="title-header-p">Calcula el área y el perímetro de un círculo</p>
+                    <img src="./circulo.png" alt="circulo">
+                </div>
+
+            
+                <form action="" class="form-circulo">
+                    <label for="circulo" class="label-circulo">Escribe cuánto mide el radio de tu círculo:</label>
+                    <input type="number" class="valor-lado-input" id="InputCirculo" placeholder="radio de la circunferencia">
+                    
+                    <div class="butons-input">
+                        <button type="button" class="calcular-perimetro-button" onclick="calcularPerimetroCirculo()">
+                            Calcular el perímetro
+                        </button> 
+                        
+                        <button type="button"  class="calcular-area-button" onclick="calcularAreaCirculo()">
+                            Calcular el área
+                        </button>
+                    </div>
+
+                    <p id="resultado-circulo-p" class="resultado-p"></p>
+                </form>
+
+            
+        </section>
+    </div>
+    <script src="./figuras_geometricas.js"></script>
+</body>
+</html>
