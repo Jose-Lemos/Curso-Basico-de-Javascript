@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./fondo.jpg");
+}
+
+header{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    align-items: center;
+}
+
+h1{
+    color: darkblue;
+    font-family:cursive;
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+}
+
+header p{
+    color: rgb(182, 40, 24);
+    font-family:cursive;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.home-container{
+    display: grid;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.page-figuras,
+.page-descuentos-porcentajes{
+    display: grid;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+.page-figuras p,
+.page-descuentos-porcentajes p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.link-page{
+    text-decoration: none;
+    justify-self: center;
+    font-size: 35px;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+@media (max-width : 640px){
+    h1{
+        font-size: 30px;
+    }
+
+    header p{
+        font-size: 15px;
+    }
+
+    .page-figuras p,
+    .page-descuentos-porcentajes p{
+        font-size: 15px;
+    }
+
+    .link-page{
+        font-size: 20px;
+    }
+
+}
